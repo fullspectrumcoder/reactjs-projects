@@ -1,0 +1,170 @@
+@import "constant", "mixins", "header", "footer", "login-signup", "adpost",
+  "buy-packages", "profile";
+
+body {
+  color: color(text);
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Mulish", sans-serif;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+h6,
+.h6,
+h5,
+.h5,
+h4,
+.h4,
+h3,
+.h3,
+h2,
+.h2,
+h1,
+.h1,
+p {
+  margin: 0;
+}
+
+.bg_gray {
+  background-color: #f9f9f9;
+  padding: 30px 0;
+}
+
+.text-accent {
+  color: color(accent);
+}
+
+.text-theme {
+  color: color(theme);
+}
+
+.btn-primary {
+  @include btnTheme;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary.focus {
+  background-color: color(theme);
+  box-shadow: none;
+}
+.form-control {
+  height: 40px;
+  line-height: 40px;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 0 10px;
+  color: color(text) !important;
+}
+
+.form-outline .form-control {
+  height: 40px;
+  font-size: 14px;
+  padding: 0 10px;
+}
+
+.form-outline textarea.form-control {
+  height: 150px;
+  overflow-y: auto;
+  padding: 10px;
+  line-height: 1.5;
+}
+
+.form-outline .form-control ~ .form-notch div {
+  border-color: #ccc !important;
+}
+
+.form-outline .form-control ~ .form-label {
+  top: 50%;
+  transform: translateY(-50%);
+  padding-top: 0;
+}
+
+.form-outline .form-control:focus ~ .form-label,
+.form-outline .form-control.active ~ .form-label {
+  top: 0;
+  padding-top: 0.37rem;
+}
+
+.form-control::placeholder {
+  color: color(text) !important;
+}
+
+.form-check-input[type="checkbox"]:checked,
+.form-check-input[type="checkbox"]:checked:focus {
+  background-color: color(theme);
+}
+
+.form-check-input:checked,
+.form-check-input[type="checkbox"]:indeterminate,
+.form-check-input:checked:focus {
+  border-color: color(theme);
+}
+
+.form-check-input:checked:focus:before {
+  box-shadow: 0px 0px 0px 13px color(theme);
+}
+
+.form-control:focus {
+  border-color: color(theme);
+  box-shadow: inset 0px 0px 0px 1px color(theme);
+}
+
+.form-outline .form-control:focus ~ .form-label {
+  color: color(theme);
+}
+
+.form-outline .form-control:focus ~ .form-notch .form-notch-leading {
+  border-color: color(theme);
+  box-shadow: -1px 0 0 0 color(theme), 0 1px 0 0 color(theme),
+    0 -1px 0 0 color(theme);
+}
+
+.form-outline .form-control:focus ~ .form-notch .form-notch-middle {
+  border-color: color(theme);
+  box-shadow: 0 1px 0 0 color(theme);
+  border-top: 1px solid transparent !important;
+}
+
+.form-outline .form-control:focus ~ .form-notch .form-notch-middle,
+.form-outline .form-control.active ~ .form-notch .form-notch-middle {
+  border-right: none;
+  border-left: none;
+  border-top: 1px solid transparent !important;
+}
+.form-outline .form-control:focus ~ .form-notch .form-notch-trailing {
+  border-color: color(theme);
+  box-shadow: 1px 0 0 0 color(theme), 0 -1px 0 0 color(theme),
+    0 1px 0 0 color(theme);
+}
+
+.css-13cymwt-control {
+  font-size: 14px;
+  padding: 0;
+  min-height: 40px !important;
+  color: color(text) !important;
+  border-color: #ccc !important;
+  border-radius: 0.25rem !important;
+
+  &:hover {
+    border-color: #ccc !important;
+  }
+
+  .css-1jqq78o-placeholder {
+    color: color(text) !important;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .css-1u9des2-indicatorSeparator {
+    background-color: #ccc;
+  }
+  .css-1xc3v61-indicatorContainer {
+    color: #ccc;
+  }
+}

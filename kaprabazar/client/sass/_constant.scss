@@ -1,0 +1,13 @@
+$colors: (
+  black: #222b2f,
+  grey_darkest: #364349,
+  White: #ffffff,
+  theme: #ff4500,
+  accent: #ff3e88,
+  text:#3c4543
+);
+
+@function color($colorName) {
+  @return map-get($colors, $colorName);
+}
+
