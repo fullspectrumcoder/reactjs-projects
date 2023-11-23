@@ -1,0 +1,29 @@
+/*Mixins*/
+@mixin  btn() {
+    padding: 15px 25px !important;
+    border: 0 !important;
+    font-weight: 700 !important;
+    overflow: hidden;
+    border-radius: 0px !important;
+    background: linear-gradient(to right bottom, color(accent) 40%, color(theme) 70%);
+    background-color: #5a02b4 !important;
+    transition: 0.4s !important;
+    width: auto !important;
+}
+@mixin  btn-hover() {
+    background: color(accent);
+    color: #fff;
+    transition: 0.5s all;
+}
+@mixin d-flex($content,$wrap) {
+    display: flex;
+    justify-content: $content;
+    flex-wrap: $wrap;
+    align-items: center;
+}
+@mixin bg {
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    height: 100%;
+    width: 100%;   
+}

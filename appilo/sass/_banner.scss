@@ -1,0 +1,13 @@
+.bg-banner {
+    padding: 200px 0 100px;
+    background-color: #fafafa;
+    background: url(../images/gradient-effect.png);
+    @include bg();
+}
+
+.bannerImg{
+
+    img{
+        width: 100%;
+    }
+}

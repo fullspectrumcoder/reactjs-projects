@@ -1,0 +1,35 @@
+.customForm{
+
+    label {
+        font-size: 14px;
+        font-weight: 600;
+        margin-bottom: 3px;
+        opacity: 0.9;
+    }
+
+    .form-control {
+        border: 2px solid #e2e5ec;
+        border-radius: 5px;
+        height: 40px;
+        line-height: 40px;
+        padding: 0 10px;
+        color: #495057;
+        font-weight: 500;
+    }
+
+    .css-2b097c-container > div {
+        border: 2px solid #e2e5ec;
+        min-height: 40px;
+    }
+
+    .css-1pahdxg-control{
+        border: 2px solid #e2e5ec !important; 
+        box-shadow: none !important;
+    }
+    
+    .css-1wa3eu0-placeholder {
+        color: #495057;
+        font-weight: 500;
+        font-size: 14px;
+    }
+}

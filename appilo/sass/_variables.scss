@@ -1,0 +1,14 @@
+/* VARIABLES*/
+$colors :(
+    primary:#fff,
+    secondary:#000,
+    accent:#ff00ff ,
+    theme:#73299a,
+    text:#212529,
+);
+$font-size:16px;
+$font-weight:500;
+$font-stack:'Poppins', sans-serif;
+@function color($color-name){
+    @return map-get($colors, $color-name )
+};

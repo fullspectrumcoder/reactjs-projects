@@ -1,0 +1,121 @@
+* {
+  margin: 0%;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+.bg-dark {
+  background: #282828;
+  padding: 50px;
+  color: #fff;
+  min-height: 100vh;
+}
+
+.bg-dark h1 {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+
+.inputFlex {
+  display: flex;
+  justify-content: center;
+  margin: 0 -10px 20px;
+  align-items: center;
+}
+
+input.form-input {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 10px;
+  border: 0;
+  outline: 0;
+  border-radius: 6px;
+  font-size: 16px;
+  margin: 0 10px;
+}
+
+.btnSubmit {
+  background: #562e7d;
+  color: #fff;
+  min-width: 130px;
+  height: 40px;
+  padding: 0;
+  line-height: 40px;
+  border-radius: 6px;
+  margin: 0 10px 0;
+  box-sizing: border-box;
+  display: block;
+  border: 0;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.cancelBtn {
+    background: #6a5f5f;
+}
+
+.taskBlock {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+ul.taskList {
+  list-style: none;
+}
+
+ul.taskList .todoBox {
+  border-radius: 6px;
+  padding: 10px 10px 10px 15px;
+  display: flex;
+  align-items: center;
+  background: #3b3b3b;
+  margin: 10px 0;
+}
+
+.number {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  background: #562e7d;
+  color: #fff;
+  border-radius: 50px;
+  font-size: 14px;
+}
+
+ul.taskList li h2 {
+  font-size: 16px;
+  font-weight: 500;
+  margin-left: 20px;
+}
+
+.delete_edit_icons {
+  display: flex;
+  margin-left: auto;
+}
+
+.delete_edit_icons span {
+  background: #562e7d;
+  width: 80px;
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+  display: block;
+  color: #fff;
+  border-radius: 6px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.noData {
+    font-size: 16px;
+    text-align: center;
+}

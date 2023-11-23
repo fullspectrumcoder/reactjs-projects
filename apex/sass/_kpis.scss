@@ -1,0 +1,68 @@
+/*Kpis Block Start From Here*/
+.kpi-block {
+    color: color(primary);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+
+    h2{
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .flex-kpi {
+        padding-top: 10px;
+        position: relative;
+        z-index: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        .kpi-values {
+            flex: 1;
+            text-align: center;
+        }
+
+        h3{            
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            opacity: .6;
+        }
+
+        p{
+            font-size: 20px ;
+            font-weight: 600 ;
+        }
+
+        &:after{
+            content: "";
+            position: absolute;
+            top: 5px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 1px;
+            height: 100%;
+            background: rgba(255,255,255,.5);
+        }
+    }
+    
+}
+
+.kpi1 .kpi-block {
+    background-image: linear-gradient(45deg,#843cf7,#38b8f2);
+}
+
+.kpi2 .kpi-block {
+    background-image: linear-gradient(45deg,#ee0979,#ff6a00);
+}
+
+.kpi3 .kpi-block {
+    background-image: linear-gradient(45deg,#43a047,#1de9b6);
+}
+
+.kpi4 .kpi-block {
+    background-image: linear-gradient(45deg,#9b3cb7,#ff396f);
+}
+
+/*Kpis Block End*/

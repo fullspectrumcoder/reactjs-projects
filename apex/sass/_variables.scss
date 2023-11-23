@@ -1,0 +1,16 @@
+/* VARIABLES*/
+$colors :(
+    primary:#fff,
+    secondary:#000,
+    accent:#061161 ,
+    theme:#780206,
+    text:#333333,
+    gradient:linear-gradient(90deg, rgba(0,161,228,1) 0%, rgb(0, 40, 158) 100%),
+    reverse:linear-gradient(90deg, rgba(0,38,156,1) 0%, rgba(0,161,228,1) 100%),
+);
+$font-size:16px;
+$font-weight:600;
+$font-stack:  'Mulish', sans-serif;
+@function color($color-name){
+    @return map-get($colors, $color-name )
+};

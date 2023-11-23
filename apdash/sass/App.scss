@@ -1,0 +1,78 @@
+@import 'media-queries', 'variables', 'mixins', 'home';
+
+body{
+    font-family: $font-stack;
+    font-size: $font-size;
+    font-weight: $font-weight;
+    color: color(secondary);
+
+    @include phone{
+        font-size: 14px;
+    }
+}
+
+a{
+    color: color(secondary);
+    text-decoration: none !important;
+
+    &:hover{
+        color: color(accent);
+        text-decoration: none;
+    }
+}
+p,h1,h2,h3,h4,h5,h6 {
+    margin-bottom: 0 !important;
+}
+.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-primary.dropdown-toggle:focus {
+    box-shadow: none;
+}
+.btn-primary.focus, .btn-primary:focus {
+    box-shadow: none;
+}
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: color(theme);
+    border-color: color(theme);
+}
+.btn-outline-secondary:not(:disabled):not(.disabled).active:focus, .btn-outline-secondary:not(:disabled):not(.disabled):active:focus, .show>.btn-outline-secondary.dropdown-toggle:focus {
+    box-shadow: none;
+}
+.form-control:focus {
+    box-shadow: none;
+}
+button:focus {
+    outline: none !important;
+}
+:focus{
+    outline: none !important;
+    box-shadow: none !important;
+}
+ul{
+    list-style: none !important; 
+    padding-left: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.btn-primary{
+    @include btn();
+
+    &:hover{
+        @include btn-hover();
+    }
+}
+
+.btn-outline-primary{
+    @include btn-out();
+
+    &:hover{
+        @include btn-hover();
+        border: 1px solid color(theme) !important;
+        color: color(primary) !important;
+    }
+}
+
+svg{
+    width: 40px;
+    height: auto;
+    fill:color(theme);
+}

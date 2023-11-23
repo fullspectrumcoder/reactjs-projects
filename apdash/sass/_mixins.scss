@@ -1,0 +1,37 @@
+/*Mixins*/
+@mixin  btn() {
+    font-size:14px !important;
+    font-weight: 500 !important;
+    padding: .55em 1.735em !important;
+    line-height: 1.75em !important;
+    transition: all 300ms ease-in-out !important;
+    background: color(gradient) !important;
+    border: 0 !important;
+}
+@mixin  btn-hover() {
+    background: color(reverse) !important;
+    transition: 0.5s all !important;
+}
+@mixin btn-out {
+    font-size:14px !important;
+    font-weight: 600 !important;
+    padding: .55em 1.735em !important;
+    line-height: 1.75em !important;
+    transition: all 300ms ease-in-out !important;
+    background-color: transparent !important;
+    border:1px solid color(accent) !important;
+    color: color(accent) !important;
+}
+@mixin d-flex() {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+@mixin bg {
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    height: 100%;
+    width: 100%;
+}

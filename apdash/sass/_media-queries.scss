@@ -1,0 +1,143 @@
+/*Mixins*/
+$desktop:1366px;
+$laptop:1200px;
+$laptop-mini:1160px;
+$desktop-small:1060px;
+$desktop-mini:768px;
+$tablet:767px;
+$phone:575px;
+$smallphone:470px;
+$miniphone:320px;
+@mixin  desktop {
+    @media (max-width: #{$desktop}){
+        @content;
+    }
+}
+@mixin  laptop {
+    @media (max-width: #{$laptop}){
+        @content;
+    }
+}
+@mixin  laptop-mini {
+    @media (max-width: #{$laptop-mini}){
+        @content;
+    }
+}
+@mixin  desktop-small {
+    @media (max-width: #{$desktop-small}){
+        @content;
+    }
+}
+@mixin  desktop-mini {
+    @media (max-width: #{$desktop-mini}){
+        @content;
+    }
+}
+@mixin  tablet {
+    @media (max-width: #{$tablet}){
+        @content;
+    }
+}
+@mixin  phone {
+    @media (max-width: #{$phone}){
+        @content;
+    }
+}
+@mixin  smallphone {
+    @media (max-width: #{$smallphone}){
+        @content;
+    }
+}
+@mixin  miniphone {
+    @media (max-width: #{$miniphone}){
+        @content;
+    }
+}
+
+@media (max-width:$laptop-mini) {
+    .col-sm-9,.col-sm-3,.col-sm-8,.col-sm-4{
+        flex :0 0 100% !important;
+        max-width: 100% !important;
+    } 
+}
+
+
+@media (max-width:$desktop-mini) {
+    .col-sm-6{
+        flex :0 0 100% !important;
+        max-width: 100% !important;
+        padding: 0 15px !important;
+    }
+
+}
+
+// @media (max-width:$phone) {
+//     .paddng-top{
+//         padding-top: 15px;
+//     }
+
+//     .justify-center{
+//         justify-content: center !important;
+//     }
+
+//     .sm-width-50{
+//         flex :0 0 100% !important;
+//         max-width: 100% !important;
+//     }
+
+//     .width-50{
+//         flex :0 0 100% !important;
+//         max-width: 100% !important;
+//     }
+// }
+
+@media (min-width:$desktop-mini) {
+    // .nav-tabs {
+    //     display: flex;
+    // }
+    
+    // .card {
+    //     border: none;
+    // }
+
+    // .card .card-header {
+    //     display:none;
+    // }  
+
+    // .card .collapse{
+    //     display:block;
+    // }
+}
+
+@media(max-width:$tablet){
+    // .tab-content > .tab-pane {
+    //     display: block !important;
+    //     opacity: 1;
+    // }
+
+    // .nav-tabs {
+    //     display:none !important;
+    // }
+
+    // .dis-none{
+    //     display: none;
+    // }
+
+    // .tab-block .col-sm-9{
+    //     flex: 0 0 100% !important;
+    //     max-width: 100% !important;
+    // }
+
+    // .tab-form{
+    //     padding: 20px !important;
+    // }
+
+    // .tab-content{
+    //     margin: 10px 0;
+    // }
+
+    // .tab-pane{
+    //     margin-bottom: 10px;
+    // }
+    
+}

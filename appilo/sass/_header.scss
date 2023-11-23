@@ -1,0 +1,108 @@
+.bg-header {
+    box-shadow: 0 0 20px -10px rgba(0, 0, 0, 0.8);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    background: color(primary);
+}
+
+
+.header{
+    @include d-flex();
+    padding: 15px 0;
+    transition: .4s;
+}
+
+.navBar{
+    margin-left: auto;
+    margin-right: 30px;
+
+    ul{
+        @include d-flex();
+    }
+
+    li{
+        padding: 0 25px;
+        position: relative;
+
+        a{
+            font-size: 15px;
+            font-weight: 600;            
+            display: flex;
+            position: relative;
+            align-items: center;
+
+            &::after{
+                content: "";
+                position: absolute;
+                height: 2px;
+                width: 0%;
+                background-color: color(accent);
+                left: 0px;
+                transition: 0.3s all ease-in-out;
+                bottom: -2px;
+            }
+
+            i{
+                margin-left: 3px;
+            }
+        }
+
+        .li-dropdown {
+            position: absolute;
+            min-width: 180px;
+            background: #fff;
+            top: 50px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 5;
+            border-radius: 5px;
+            box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.05);
+            transition: all 0.4s ease-in-out;
+            opacity: 0;
+            visibility: hidden;
+    
+            a {
+                display: block;
+                padding: 12px 20px;
+    
+                &:first-child{
+                    border-radius: 5px 5px 0 0;
+                }
+    
+                &:last-child{
+                    border-radius: 0 0 5px 5px;
+                }
+    
+                &:hover{
+                    background: #ededed;
+                    color: inherit;
+                }
+            }
+        }
+
+        
+        &:hover{
+
+            .li-dropdown{
+                top: 35px;
+                opacity: 1;
+                visibility: visible;
+            }
+
+            > a:after{
+                width: 100%;
+            }
+        }
+
+    }    
+}
+
+.bg-header.scrolled {
+
+    .header{
+        padding: 10px 0;
+    }
+}

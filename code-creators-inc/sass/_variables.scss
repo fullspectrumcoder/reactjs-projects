@@ -1,0 +1,11 @@
+/* VARIABLES*/
+$colors :(
+    primary:#fff,
+    secondary:#151515,
+    text:#858585,
+    theme:#5a02b4 ,
+    accent:#6509e2,
+);
+@function color($color-name){
+    @return map-get($colors, $color-name )
+};

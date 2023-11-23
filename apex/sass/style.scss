@@ -1,0 +1,83 @@
+@import 'media-queries', 'variables', 'mixins', 'kpis', 'dashboard', 'layout', 'projects', 'modal-pops', 'payable-receivable', 'tabs', 'form';
+
+body{
+    font-family: $font-stack ;
+    font-size: $font-size ;
+    font-weight: $font-weight ;
+    color: color(secondary);
+    background-color: #f5f7fa;
+}
+
+a{
+    color: color(secondary);
+    text-decoration: none !important;
+
+    &:hover{
+        color: color(accent);
+        text-decoration: none;
+    }
+}
+p,h1,h2,h3,h4,h5,h6 {
+    margin-bottom: 0 !important;
+}
+.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-primary.dropdown-toggle:focus {
+    box-shadow: none;
+}
+.btn-primary.focus, .btn-primary:focus {
+    box-shadow: none;
+}
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle,.btn-primary.focus, .btn-primary:focus {
+    color: #fff;
+    background-color: color(theme);
+    border-color: color(theme);
+}
+.form-control:focus {
+    box-shadow: none;
+}
+button:focus {
+    outline: none !important;
+}
+:focus{
+    outline: none !important;
+    box-shadow: none !important;
+}
+ul{
+    list-style: none !important; 
+    padding-left: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.btn-primary{
+    @include btn();
+
+    &:hover{
+        @include btn-hover();
+    }
+}
+
+.clear-btn{
+    background: #efefef;
+    color: #727273;
+    margin-bottom: 20px;
+
+    &:hover, &:active, &:focus{
+        background: #e3e3e3 !important;
+        color: #727273 !important;
+    }
+}
+
+.btn-cancel {
+    background: #6c757d;
+
+    &:hover, &:focus, &:active{
+        background: #5a6268;
+    }
+}
+
+.ag-theme-alpine {
+    font-family: "Mulish",sans-serif;
+}
+
+.ag-header-cell-label {
+    font-size: 16px;
+}

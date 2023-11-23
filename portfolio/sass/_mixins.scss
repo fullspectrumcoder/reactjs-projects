@@ -1,0 +1,27 @@
+/*Mixins*/
+@mixin  btn() {
+    font-size:14px ;
+    font-weight: 600 ;
+    padding: 8px 15px;
+    line-height: normal ;
+    transition: all 0.3s ease-in-out ;
+    background: color(theme);
+    border: 0 ;
+    font-family: "Mulish",sans-serif;
+}
+@mixin  btn-hover() {
+    background: color(accent);
+}
+@mixin d-flex() {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+@mixin bg {
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    height: 100%;
+    width: 100%;
+}

@@ -1,0 +1,14 @@
+/* VARIABLES*/
+$colors :(
+    primary:#fff,
+    secondary:#000,
+    theme:#9c5451,
+    text:#888,
+);
+$font-size:14px;
+$font-weight:500;
+$font-stack: 'Mukta', sans-serif;
+$font-heading: 'Playfair Display', serif;
+@function color($color-name){
+    @return map-get($colors, $color-name )
+};

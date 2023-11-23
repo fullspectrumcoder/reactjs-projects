@@ -1,0 +1,56 @@
+@import 'media-queries', 'variables', 'mixins', 'main-page';
+
+
+body {
+    font-family:  'Titillium Web', sans-serif !important;
+    color: color(secondary) !important;
+    font-weight: 500;   
+    overflow-x: hidden; 
+}
+
+
+a{
+    color: color(secondary);
+    text-decoration: none;
+
+    &:hover{
+        color: color(theme);
+        text-decoration: none;
+    }
+}
+p,h1,h2,h3,h4,h5,h6{
+    margin-bottom: 0 !important;
+}
+.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-primary.dropdown-toggle:focus {
+    box-shadow: none;
+}
+.btn-primary.focus, .btn-primary:focus {
+    box-shadow: none;
+}
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: color(accent);
+    border-color: color(accent);
+}
+.btn-outline-secondary:not(:disabled):not(.disabled).active:focus, .btn-outline-secondary:not(:disabled):not(.disabled):active:focus, .show>.btn-outline-secondary.dropdown-toggle:focus {
+    box-shadow: none;
+}
+.form-control:focus {
+    box-shadow: none;
+}
+button:focus {
+    outline: 1px dotted;
+    outline: none;
+    box-shadow: none !important;
+}
+:focus{
+    outline: none !important;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+
