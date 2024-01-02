@@ -139,7 +139,7 @@ const WeatherApp = () => {
         style={{ backgroundImage: `url(${data.img})` }}
       >
         <div className="container">
-          <a href="/weather-app-react/" className="logo">
+          <a href="/" className="logo">
             Weather App
           </a>
           {data !== null ? (
